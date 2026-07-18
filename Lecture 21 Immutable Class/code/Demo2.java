@@ -22,7 +22,7 @@ final class Student {
     Student(int age, String name, College college) {
         this.age = age;
         this.name = name;
-        this.college = new College(college.name, college.address);
+        this.college = new College(college.name, college.address); // coz anyone can access college.name if we don't write like this.
     }
 
     // getters
