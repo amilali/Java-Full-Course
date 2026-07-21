@@ -2,6 +2,8 @@ public class Demo {
     public static void main(String[] args) {
         String s1 = "Hello"; // Literal
         String s2 = "Hello";
+        String s = new String("AMil");
+        System.out.println(s);
 
         System.out.println(s1 == s2); // true
 
