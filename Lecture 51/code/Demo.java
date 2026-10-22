@@ -12,6 +12,11 @@ public class Demo {
     }
 }
 
+// In the current implementation, both threads (t1 and t2) are using the same object (test).
+// Since the `show()` method is synchronized, only one thread can execute it at a time.
+// The second thread will have to wait for the first thread to finish before it can execute the method.
+// This is because the `synchronized` keyword locks the method at the object level.
+
 class Test {
 
     synchronized void show() {
